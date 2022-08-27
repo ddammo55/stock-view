@@ -2,16 +2,9 @@ import streamlit as st
 import plotly.figure_factory as ff
 import plotly.express as px
 import numpy as np
-
 import pandas as pd
+
 st.title('# Won Stock')
-
-
-
-
-import streamlit as st
-import plotly.figure_factory as ff
-import numpy as np
 
 # Add histogram data
 x1 = np.random.randn(200) - 2
