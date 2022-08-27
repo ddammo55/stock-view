@@ -1,1 +1,1 @@
-plotly.figure_factory
+plotly
