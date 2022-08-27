@@ -4,4 +4,3 @@ plotly.express
 requests
 beautifulsoup4==4.10.0
 lxml
-dropna
