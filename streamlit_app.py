@@ -39,4 +39,5 @@ html = bs(response.text, "lxml")
 table = html.select("table")
 len(table)
 temp = table[0]
-pd.DataFrame(temp)
+df = pd.DataFrame(temp)
+df
