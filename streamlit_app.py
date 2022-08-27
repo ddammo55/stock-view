@@ -3,7 +3,7 @@ import plotly.figure_factory as ff
 import plotly.express as px
 import numpy as np
 import FinanceDataReader as fdr
-
+import pandas as pd
 st.title('# Won Stock')
 
 FAANG = ["FB", "AMZN", "AAPL", "NFLX", "GOOGL"]
