@@ -25,8 +25,8 @@ fig = ff.create_distplot(
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
 
-item_code = "326030"
-item_name = "SK바이오팜"
+item_code = "006620"
+item_name = "동구바이오제약"
 page_no = 1
 
 
