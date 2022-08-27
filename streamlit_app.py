@@ -36,7 +36,7 @@ def get_day_list(item_code, page_no):
     """ 
     url = f"https://finance.naver.com/item/sise_day.nhn?code={item_code}&page={page_no}"
     
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
+    #headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
 
     response = requests.get(url, headers=headers)
     html = bs(response.text, "lxml")
