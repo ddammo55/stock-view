@@ -1,2 +1,1 @@
-# stock-view
-import plotly.figure_factory as ff
+plotly.figure_factory
