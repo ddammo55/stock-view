@@ -38,5 +38,5 @@ response = requests.get(url, headers=headers)
 html = bs(response.text, "lxml")
 table = html.select("table")
 len(table)
-temp = table[0].dropna()
+temp = table[0]
 st.temp
