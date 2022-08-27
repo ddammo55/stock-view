@@ -4,7 +4,7 @@ import plotly.express as px
 view = [100,150,30]
 
 st.write('# Hello World')
-st.
+
 sview = pd.Series(view)
 sview
 
