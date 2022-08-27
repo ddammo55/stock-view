@@ -29,15 +29,20 @@ item_code = "326030"
 item_name = "SK바이오팜"
 page_no = 1
 
-# 종목 URL 만들기
-url = f"https://finance.naver.com/item/sise_day.nhn?code={item_code}&page={page_no}"
-headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
 
-response = requests.get(url, headers=headers)
+def get_day_list(item_code, page_no):
+    """
+    일자별 시세를 페이지별로 수집
+    """ 
+    url = f"https://finance.naver.com/item/sise_day.nhn?code={item_code}&page={page_no}"
+    
+    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
 
-html = bs(response.text, "lxml")
-table = html.select("table")
-len(table)
-temp = table[0]
-df = pd.DataFrame(temp)
-df
+    response = requests.get(url, headers=headers)
+    html = bs(response.text, "lxml")
+    table = html.select("table")
+    table = pd.read_html(str(table))
+    temp = table[0].dropna()
+    return temp
+
+get_day_list(item_code, 1)
