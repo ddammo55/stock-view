@@ -4,7 +4,7 @@ import plotly.express as px
 import numpy as np
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup
 
 st.title('# Won Stock')
 
@@ -35,6 +35,6 @@ headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 response = requests.get(url, headers=headers)
 
-html = bs(response.text, "lxml")
+html = BeautifulSoup(response.text, "lxml")
 table = html.select("table")
 len(table)
