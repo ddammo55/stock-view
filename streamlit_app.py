@@ -12,8 +12,8 @@ df_faang = pd.concat(faang_list, axis=1)
 df_faang.columns = FAANG
 df_ratio = df_faang / df_faang.iloc[0] - 1
 df_ratio.columns.name = "company"
-df = px.line(df_ratio, title="FAANG 일별 수익률")
+# df = px.line(df_ratio, title="FAANG 일별 수익률")
 
 
 
-st.plotly_chart(df, use_container_width=True)
+st.plotly_chart(df_ratio, use_container_width=True)
