@@ -45,4 +45,4 @@ def get_day_list(item_code, page_no):
     temp = table[0].dropna()
     return temp
 
-get_day_list(item_code, 1)
+st.write(get_day_list(item_code, 1))
