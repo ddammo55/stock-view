@@ -1,4 +1,4 @@
 plotly==4.12.0
 pandas
 plotly.express
-finance-datareader
+FinanceDataReader
