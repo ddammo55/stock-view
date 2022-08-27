@@ -6,6 +6,6 @@ import numpy as np
 st.title('# Won Stock')
 
 df = px.data.stocks()
-df = px.line(df, x="date", y="GOOG", title='구글 차트')
+df = px.line(df, x="date", y="006620", title='동구바이오제약 차트')
 
 st.plotly_chart(df, use_container_width=True)
