@@ -1,5 +1,9 @@
-view = [10,100,50]
-mem = "Hello Wrold"
-print(view)
-print(mem)
+import streamlit as st
+import pandas as pd
+
+view = [100,150,30]
+
+st.write('# Hello World')
+sview = pd.Series(view)
+sview
 
