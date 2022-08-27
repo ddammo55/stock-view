@@ -3,6 +3,7 @@ import plotly.figure_factory as ff
 import plotly.express as px
 import numpy as np
 import pandas as pd
+import requests
 
 st.title('# Won Stock')
 
